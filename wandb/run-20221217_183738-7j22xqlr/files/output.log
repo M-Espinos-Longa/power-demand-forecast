@@ -1,0 +1,47 @@
+Using cuda device
+Loading model
+Weights loaded successfully
+/usr/lib/python3/dist-packages/numpy/core/shape_base.py:65: FutureWarning: The input object of type 'Tensor' is an array-like implementing one of the corresponding protocols (`__array__`, `__array_interface__` or `__array_struct__`); but not a sequence (or 0-D). In the future, this object will be coerced as if it was first converted using `np.array(obj)`. To retain the old behaviour, you have to either modify the type 'Tensor', or assign to an empty array created with `np.empty(correct_shape, dtype=object)`.
+  ary = asanyarray(ary)
+/usr/lib/python3/dist-packages/numpy/core/shape_base.py:65: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  ary = asanyarray(ary)
+Traceback (most recent call last):
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/code/forecasting.py", line 51, in <module>
+    net.prediction()
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/code/ANN.py", line 155, in prediction
+    plt.plot(predictions, label="Predicted")
+  File "/usr/lib/python3/dist-packages/matplotlib/pyplot.py", line 2757, in plot
+    return gca().plot(
+  File "/usr/lib/python3/dist-packages/matplotlib/axes/_axes.py", line 1634, in plot
+    self.add_line(line)
+  File "/usr/lib/python3/dist-packages/matplotlib/axes/_base.py", line 2283, in add_line
+    self._update_line_limits(line)
+  File "/usr/lib/python3/dist-packages/matplotlib/axes/_base.py", line 2306, in _update_line_limits
+    path = line.get_path()
+  File "/usr/lib/python3/dist-packages/matplotlib/lines.py", line 999, in get_path
+    self.recache()
+  File "/usr/lib/python3/dist-packages/matplotlib/lines.py", line 657, in recache
+    y = _to_unmasked_float_array(yconv).ravel()
+  File "/usr/lib/python3/dist-packages/matplotlib/cbook/__init__.py", line 1298, in _to_unmasked_float_array
+    return np.asarray(x, float)
+ValueError: only one element tensors can be converted to Python scalars
+Traceback (most recent call last):
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/code/forecasting.py", line 51, in <module>
+    net.prediction()
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/code/ANN.py", line 155, in prediction
+    plt.plot(predictions, label="Predicted")
+  File "/usr/lib/python3/dist-packages/matplotlib/pyplot.py", line 2757, in plot
+    return gca().plot(
+  File "/usr/lib/python3/dist-packages/matplotlib/axes/_axes.py", line 1634, in plot
+    self.add_line(line)
+  File "/usr/lib/python3/dist-packages/matplotlib/axes/_base.py", line 2283, in add_line
+    self._update_line_limits(line)
+  File "/usr/lib/python3/dist-packages/matplotlib/axes/_base.py", line 2306, in _update_line_limits
+    path = line.get_path()
+  File "/usr/lib/python3/dist-packages/matplotlib/lines.py", line 999, in get_path
+    self.recache()
+  File "/usr/lib/python3/dist-packages/matplotlib/lines.py", line 657, in recache
+    y = _to_unmasked_float_array(yconv).ravel()
+  File "/usr/lib/python3/dist-packages/matplotlib/cbook/__init__.py", line 1298, in _to_unmasked_float_array
+    return np.asarray(x, float)
+ValueError: only one element tensors can be converted to Python scalars

@@ -83,10 +83,10 @@ class Dataloader(object):
         """
         print("Saving datasets")
         # save training dataset
-        torch.save(self.trainIdata, 'trainInput.pt')
-        torch.save(self.trainOdata, 'trainOutput.pt')
+        torch.save(self.trainIdata, './data/trainInput.pt')
+        torch.save(self.trainOdata, './data/trainOutput.pt')
 
         # save testing dataset
-        torch.save(self.testIdata, 'testInput.pt')
-        torch.save(self.testOdata, 'testOutput.pt')
+        torch.save(self.testIdata, './data/testInput.pt')
+        torch.save(self.testOdata, './data/testOutput.pt')
         print("Datsets saved successfully")

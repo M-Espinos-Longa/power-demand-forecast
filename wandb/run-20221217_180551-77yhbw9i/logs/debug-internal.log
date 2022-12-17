@@ -1,0 +1,195 @@
+2022-12-17 18:05:51,765 INFO    StreamThr :671781 [internal.py:wandb_internal():88] W&B internal server running at pid: 671781, started at: 2022-12-17 18:05:51.764797
+2022-12-17 18:05:51,766 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: status
+2022-12-17 18:05:51,767 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: status
+2022-12-17 18:05:51,768 INFO    WriterThread:671781 [datastore.py:open_for_write():75] open: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/run-77yhbw9i.wandb
+2022-12-17 18:05:51,768 DEBUG   SenderThread:671781 [sender.py:send():303] send: header
+2022-12-17 18:05:51,768 DEBUG   SenderThread:671781 [sender.py:send():303] send: run
+2022-12-17 18:05:52,315 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: check_version
+2022-12-17 18:05:52,316 INFO    SenderThread:671781 [dir_watcher.py:__init__():216] watching files in: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files
+2022-12-17 18:05:52,316 INFO    SenderThread:671781 [sender.py:_start_run_threads():928] run started: 77yhbw9i with start time 1671300351.762403
+2022-12-17 18:05:52,316 DEBUG   SenderThread:671781 [sender.py:send():303] send: summary
+2022-12-17 18:05:52,316 INFO    SenderThread:671781 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-17 18:05:52,316 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: check_version
+2022-12-17 18:05:52,456 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: run_start
+2022-12-17 18:05:52,461 DEBUG   HandlerThread:671781 [system_info.py:__init__():31] System info init
+2022-12-17 18:05:52,461 DEBUG   HandlerThread:671781 [system_info.py:__init__():46] System info init done
+2022-12-17 18:05:52,461 INFO    HandlerThread:671781 [system_monitor.py:start():150] Starting system monitor
+2022-12-17 18:05:52,461 INFO    SystemMonitor:671781 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-12-17 18:05:52,461 INFO    HandlerThread:671781 [system_monitor.py:probe():168] Collecting system info
+2022-12-17 18:05:52,462 INFO    SystemMonitor:671781 [interfaces.py:start():168] Started cpu
+2022-12-17 18:05:52,462 INFO    SystemMonitor:671781 [interfaces.py:start():168] Started disk
+2022-12-17 18:05:52,463 INFO    SystemMonitor:671781 [interfaces.py:start():168] Started gpu
+2022-12-17 18:05:52,463 INFO    SystemMonitor:671781 [interfaces.py:start():168] Started memory
+2022-12-17 18:05:52,463 INFO    SystemMonitor:671781 [interfaces.py:start():168] Started network
+2022-12-17 18:05:52,486 DEBUG   HandlerThread:671781 [system_info.py:probe():195] Probing system
+2022-12-17 18:05:52,488 DEBUG   HandlerThread:671781 [system_info.py:_probe_git():180] Probing git
+2022-12-17 18:05:52,492 DEBUG   HandlerThread:671781 [system_info.py:_probe_git():188] Probing git done
+2022-12-17 18:05:52,492 DEBUG   HandlerThread:671781 [system_info.py:probe():241] Probing system done
+2022-12-17 18:05:52,492 DEBUG   HandlerThread:671781 [system_monitor.py:probe():177] {'os': 'Linux-5.14.0-1054-oem-x86_64-with-glibc2.35', 'python': '3.10.6', 'heartbeatAt': '2022-12-17T18:05:52.487014', 'startedAt': '2022-12-17T18:05:51.757580', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/code/forecasting.py', 'codePath': 'code/forecasting.py', 'git': {'remote': 'https://github.com/M-Espinos-Longa/power-demand-forecast.git', 'commit': '9b3c74e34d6568d2defc511b86228949f83c052b'}, 'email': 'marc.espinos-longa@cranfield.ac.uk', 'root': '/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project', 'host': 'mespinoslonga-ThinkPad-X1-Extreme-Gen-3', 'username': 'mespinoslonga', 'executable': '/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/NSDTS-Func-Approx/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2749.9905833333337, 'min': 800.0, 'max': 5000.0}, 'cpu_freq_per_core': [{'current': 2600.0, 'min': 800.0, 'max': 5000.0}, {'current': 2600.0, 'min': 800.0, 'max': 5000.0}, {'current': 2600.0, 'min': 800.0, 'max': 5000.0}, {'current': 2600.0, 'min': 800.0, 'max': 5000.0}, {'current': 3499.876, 'min': 800.0, 'max': 5000.0}, {'current': 2600.0, 'min': 800.0, 'max': 5000.0}, {'current': 3500.011, 'min': 800.0, 'max': 5000.0}, {'current': 2600.0, 'min': 800.0, 'max': 5000.0}, {'current': 2600.0, 'min': 800.0, 'max': 5000.0}, {'current': 2600.0, 'min': 800.0, 'max': 5000.0}, {'current': 2600.0, 'min': 800.0, 'max': 5000.0}, {'current': 2600.0, 'min': 800.0, 'max': 5000.0}], 'disk': {'total': 45.53391647338867, 'used': 15.324920654296875}, 'gpu': 'NVIDIA GeForce GTX 1650 Ti with Max-Q Design', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1650 Ti with Max-Q Design', 'memory_total': 4294967296}], 'memory': {'total': 15.298316955566406}}
+2022-12-17 18:05:52,492 INFO    HandlerThread:671781 [system_monitor.py:probe():178] Finished collecting system info
+2022-12-17 18:05:52,492 INFO    HandlerThread:671781 [system_monitor.py:probe():181] Publishing system info
+2022-12-17 18:05:52,492 DEBUG   HandlerThread:671781 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-12-17 18:05:52,492 DEBUG   HandlerThread:671781 [system_info.py:_save_pip():67] Saving pip packages done
+2022-12-17 18:05:52,492 INFO    HandlerThread:671781 [system_monitor.py:probe():183] Finished publishing system info
+2022-12-17 18:05:52,494 DEBUG   SenderThread:671781 [sender.py:send():303] send: files
+2022-12-17 18:05:52,494 INFO    SenderThread:671781 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-12-17 18:05:52,498 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: stop_status
+2022-12-17 18:05:52,499 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: stop_status
+2022-12-17 18:05:52,826 DEBUG   SenderThread:671781 [sender.py:send():303] send: telemetry
+2022-12-17 18:05:52,826 DEBUG   SenderThread:671781 [sender.py:send():303] send: metric
+2022-12-17 18:05:52,826 DEBUG   SenderThread:671781 [sender.py:send():303] send: telemetry
+2022-12-17 18:05:52,826 DEBUG   SenderThread:671781 [sender.py:send():303] send: metric
+2022-12-17 18:05:52,826 DEBUG   SenderThread:671781 [sender.py:send():303] send: metric
+2022-12-17 18:05:53,318 INFO    Thread-13 :671781 [dir_watcher.py:_on_file_created():275] file/dir created: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/wandb-summary.json
+2022-12-17 18:05:53,318 INFO    Thread-13 :671781 [dir_watcher.py:_on_file_created():275] file/dir created: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/requirements.txt
+2022-12-17 18:05:53,319 INFO    Thread-13 :671781 [dir_watcher.py:_on_file_created():275] file/dir created: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/output.log
+2022-12-17 18:05:53,319 INFO    Thread-13 :671781 [dir_watcher.py:_on_file_created():275] file/dir created: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/wandb-metadata.json
+2022-12-17 18:05:53,394 INFO    Thread-16 :671781 [upload_job.py:push():143] Uploaded file /tmp/tmpb_v01p6swandb/3lo6t7pg-wandb-metadata.json
+2022-12-17 18:05:53,811 DEBUG   SenderThread:671781 [sender.py:send():303] send: exit
+2022-12-17 18:05:53,811 INFO    SenderThread:671781 [sender.py:send_exit():442] handling exit code: 1
+2022-12-17 18:05:53,811 INFO    SenderThread:671781 [sender.py:send_exit():444] handling runtime: 1
+2022-12-17 18:05:53,811 INFO    SenderThread:671781 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-17 18:05:53,811 INFO    SenderThread:671781 [sender.py:send_exit():450] send defer
+2022-12-17 18:05:53,811 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:05:53,811 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 0
+2022-12-17 18:05:53,812 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:05:53,812 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-12-17 18:05:53,812 INFO    SenderThread:671781 [sender.py:transition_state():463] send defer: 1
+2022-12-17 18:05:53,812 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:05:53,812 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 1
+2022-12-17 18:05:53,812 INFO    HandlerThread:671781 [system_monitor.py:finish():160] Stopping system monitor
+2022-12-17 18:05:53,812 DEBUG   SystemMonitor:671781 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-12-17 18:05:53,812 DEBUG   SystemMonitor:671781 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-12-17 18:05:53,812 DEBUG   SystemMonitor:671781 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-12-17 18:05:53,813 INFO    HandlerThread:671781 [interfaces.py:finish():173] Joined cpu
+2022-12-17 18:05:53,813 INFO    HandlerThread:671781 [interfaces.py:finish():173] Joined disk
+2022-12-17 18:05:53,846 INFO    HandlerThread:671781 [interfaces.py:finish():173] Joined gpu
+2022-12-17 18:05:53,846 INFO    HandlerThread:671781 [interfaces.py:finish():173] Joined memory
+2022-12-17 18:05:53,847 INFO    HandlerThread:671781 [interfaces.py:finish():173] Joined network
+2022-12-17 18:05:53,847 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:05:53,847 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-12-17 18:05:53,847 INFO    SenderThread:671781 [sender.py:transition_state():463] send defer: 2
+2022-12-17 18:05:53,847 DEBUG   SenderThread:671781 [sender.py:send():303] send: stats
+2022-12-17 18:05:53,847 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:05:53,847 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 2
+2022-12-17 18:05:53,847 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:05:53,847 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-12-17 18:05:53,848 INFO    SenderThread:671781 [sender.py:transition_state():463] send defer: 3
+2022-12-17 18:05:53,848 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:05:53,848 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 3
+2022-12-17 18:05:53,848 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:05:53,848 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-12-17 18:05:53,848 INFO    SenderThread:671781 [sender.py:transition_state():463] send defer: 4
+2022-12-17 18:05:53,848 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:05:53,848 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 4
+2022-12-17 18:05:53,848 DEBUG   SenderThread:671781 [sender.py:send():303] send: summary
+2022-12-17 18:05:53,849 INFO    SenderThread:671781 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-12-17 18:05:53,849 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:05:53,849 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-12-17 18:05:53,849 INFO    SenderThread:671781 [sender.py:transition_state():463] send defer: 5
+2022-12-17 18:05:53,849 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:05:53,849 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 5
+2022-12-17 18:05:53,849 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:05:53,849 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-12-17 18:05:54,217 INFO    SenderThread:671781 [sender.py:transition_state():463] send defer: 6
+2022-12-17 18:05:54,217 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:05:54,217 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 6
+2022-12-17 18:05:54,217 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:05:54,217 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 6
+2022-12-17 18:05:54,316 INFO    Thread-13 :671781 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/wandb-summary.json
+2022-12-17 18:05:54,317 INFO    Thread-13 :671781 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/config.yaml
+2022-12-17 18:05:54,811 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:05:55,317 INFO    Thread-13 :671781 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/output.log
+2022-12-17 18:05:55,798 INFO    SenderThread:671781 [sender.py:transition_state():463] send defer: 7
+2022-12-17 18:05:55,798 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:05:55,799 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:05:55,799 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 7
+2022-12-17 18:05:55,799 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:05:55,799 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 7
+2022-12-17 18:05:55,799 INFO    SenderThread:671781 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-12-17 18:05:55,811 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:05:56,317 INFO    Thread-13 :671781 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/output.log
+2022-12-17 18:05:56,317 INFO    SenderThread:671781 [dir_watcher.py:finish():392] scan: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files
+2022-12-17 18:05:56,317 INFO    SenderThread:671781 [dir_watcher.py:finish():406] scan save: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/output.log output.log
+2022-12-17 18:05:56,317 INFO    SenderThread:671781 [dir_watcher.py:finish():406] scan save: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/wandb-metadata.json wandb-metadata.json
+2022-12-17 18:05:56,318 INFO    SenderThread:671781 [dir_watcher.py:finish():406] scan save: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/requirements.txt requirements.txt
+2022-12-17 18:05:56,318 INFO    SenderThread:671781 [dir_watcher.py:finish():406] scan save: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/wandb-summary.json wandb-summary.json
+2022-12-17 18:05:56,319 INFO    SenderThread:671781 [dir_watcher.py:finish():406] scan save: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/config.yaml config.yaml
+2022-12-17 18:05:56,320 INFO    SenderThread:671781 [sender.py:transition_state():463] send defer: 8
+2022-12-17 18:05:56,320 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:05:56,324 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:05:56,324 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 8
+2022-12-17 18:05:56,324 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:05:56,324 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 8
+2022-12-17 18:05:56,324 INFO    SenderThread:671781 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-17 18:05:56,812 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:05:56,812 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:05:57,388 INFO    Thread-20 :671781 [upload_job.py:push():143] Uploaded file /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/config.yaml
+2022-12-17 18:05:57,812 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:05:57,812 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:05:57,899 INFO    Thread-19 :671781 [upload_job.py:push():143] Uploaded file /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/wandb-summary.json
+2022-12-17 18:05:58,813 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:05:58,813 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:05:59,813 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:05:59,813 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:00,814 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:06:00,814 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:01,814 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:06:01,814 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:02,275 INFO    Thread-17 :671781 [upload_job.py:push():143] Uploaded file /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/output.log
+2022-12-17 18:06:02,815 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:06:02,815 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:03,815 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:06:03,815 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:04,816 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:06:04,816 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:05,816 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:06:05,816 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:06,817 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:06:06,818 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:07,818 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:06:07,818 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:08,754 INFO    Thread-18 :671781 [upload_job.py:push():143] Uploaded file /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/files/requirements.txt
+2022-12-17 18:06:08,818 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:06:08,818 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:08,954 INFO    Thread-12 (_thread_body):671781 [sender.py:transition_state():463] send defer: 9
+2022-12-17 18:06:08,955 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:06:08,955 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 9
+2022-12-17 18:06:08,955 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:06:08,955 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 9
+2022-12-17 18:06:08,955 INFO    SenderThread:671781 [file_pusher.py:join():173] waiting for file pusher
+2022-12-17 18:06:08,955 INFO    SenderThread:671781 [sender.py:transition_state():463] send defer: 10
+2022-12-17 18:06:08,955 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:06:08,955 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 10
+2022-12-17 18:06:08,955 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:06:08,956 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 10
+2022-12-17 18:06:09,819 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:06:11,211 INFO    SenderThread:671781 [sender.py:transition_state():463] send defer: 11
+2022-12-17 18:06:11,211 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:11,211 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:06:11,211 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 11
+2022-12-17 18:06:11,211 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:06:11,211 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 11
+2022-12-17 18:06:11,212 INFO    SenderThread:671781 [sender.py:transition_state():463] send defer: 12
+2022-12-17 18:06:11,212 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: defer
+2022-12-17 18:06:11,212 INFO    HandlerThread:671781 [handler.py:handle_request_defer():162] handle defer: 12
+2022-12-17 18:06:11,212 DEBUG   SenderThread:671781 [sender.py:send():303] send: final
+2022-12-17 18:06:11,212 DEBUG   SenderThread:671781 [sender.py:send():303] send: footer
+2022-12-17 18:06:11,212 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: defer
+2022-12-17 18:06:11,212 INFO    SenderThread:671781 [sender.py:send_request_defer():459] handle sender defer: 12
+2022-12-17 18:06:11,213 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: poll_exit
+2022-12-17 18:06:11,213 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: poll_exit
+2022-12-17 18:06:11,213 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: server_info
+2022-12-17 18:06:11,213 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: get_summary
+2022-12-17 18:06:11,213 DEBUG   SenderThread:671781 [sender.py:send_request():317] send_request: server_info
+2022-12-17 18:06:11,215 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: sampled_history
+2022-12-17 18:06:11,929 INFO    MainThread:671781 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-12-17 18:06:11,929 INFO    MainThread:671781 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-12-17 18:06:11,929 INFO    MainThread:671781 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-12-17 18:06:11,929 DEBUG   HandlerThread:671781 [handler.py:handle_request():139] handle_request: shutdown
+2022-12-17 18:06:11,929 INFO    HandlerThread:671781 [handler.py:finish():814] shutting down handler
+2022-12-17 18:06:12,212 INFO    WriterThread:671781 [datastore.py:close():279] close: /home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/wandb/run-20221217_180551-77yhbw9i/run-77yhbw9i.wandb
+2022-12-17 18:06:12,929 INFO    SenderThread:671781 [sender.py:finish():1331] shutting down sender
+2022-12-17 18:06:12,929 INFO    SenderThread:671781 [file_pusher.py:finish():168] shutting down file pusher
+2022-12-17 18:06:12,929 INFO    SenderThread:671781 [file_pusher.py:join():173] waiting for file pusher
+2022-12-17 18:06:12,931 INFO    MainThread:671781 [internal.py:handle_exit():78] Internal process exited

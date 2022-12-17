@@ -1,0 +1,4 @@
+Using cuda device
+Loading model
+Weights loaded successfully
+[tensor(574.2189), tensor(558.8356), tensor(548.9525), tensor(540.3274), tensor(538.8065), tensor(543.6509), tensor(545.8666), tensor(550.5728), tensor(555.2355), tensor(556.8427), tensor(559.6120), tensor(563.2107), tensor(566.9315), tensor(572.7253), tensor(578.4599), tensor(584.9499), tensor(590.6432), tensor(594.9163), tensor(598.1679), tensor(600.1431), tensor(600.6947), tensor(601.3828), tensor(601.2272), tensor(601.1898), tensor(600.9083), tensor(599.9451), tensor(598.3351), tensor(595.6432), tensor(591.8434), tensor(587.4345), tensor(582.4132), tensor(577.3982), tensor(572.6075), tensor(568.1771), tensor(564.2216), tensor(560.6367), tensor(557.2646), tensor(554.1632), tensor(551.1372), tensor(548.3716)]

@@ -1,0 +1,31 @@
+Using cuda device
+Loading model
+Weights loaded successfully
+Traceback (most recent call last):
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/code/forecasting.py", line 51, in <module>
+    net.prediction()
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/code/ANN.py", line 148, in prediction
+    val = self.network(eval) # prediction
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/NSDTS-Func-Approx/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/NSDTS-Func-Approx/lib/python3.10/site-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/NSDTS-Func-Approx/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/NSDTS-Func-Approx/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (24x1 and 24x8)
+Traceback (most recent call last):
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/code/forecasting.py", line 51, in <module>
+    net.prediction()
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/code/ANN.py", line 148, in prediction
+    val = self.network(eval) # prediction
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/NSDTS-Func-Approx/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/NSDTS-Func-Approx/lib/python3.10/site-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/NSDTS-Func-Approx/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/NSDTS-Func-Approx/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (24x1 and 24x8)

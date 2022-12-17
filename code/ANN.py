@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import random
 from math import *
 from operator import itemgetter
+import os
 
 class ANN(nn.Module):
     """
@@ -122,6 +123,44 @@ class ANN(nn.Module):
         plt.legend()
         plt.show()
 
+    def prediction(self):
+        """
+        Predict data
+        Input:
+        Output:
+        """
+        self.network.eval() # network evaluation mode
+        predictions = [] # initialise predictions
+
+        # take last 24 rows of data from data.xlsx
+        eval = torch.tensor([
+        714.28497788115, 717.995463676785, 720.729432489218,
+        721.718681997713, 721.11468954508, 725.286956896153,
+        734.69056362186, 754.392652083173, 772.063389888152,
+        781.329137146009, 794.006426501372, 813.111751526669,
+        813.637445165078, 807.379389400738, 774.675210172325,
+        751.198207847083, 740.272594458792, 712.851151081395,
+        700.342408562234, 682.001337736434, 653.687926461454,
+        645.29330201726, 619.618753357197, 594.570299960462
+        ]).to(self.device)
+
+        for i in range(40):
+            val = self.network(eval) # prediction
+            predictions.append(val.squeeze(0).detach().to("cpu")) # append results
+            eval = torch.cat((eval, val), 0) # add prediction to input tensor
+            eval = eval[-24:] # take last 24 input elements
+
+        # plot predictions
+        fig = plt.figure("Predictions")
+        plt.plot(predictions, label="Predicted")
+        plt.legend()
+        plt.show()
+
+        # save predictions to txt
+        with open('./data/predictions.txt', 'w') as f:
+            for i in predictions:
+                f.write(f"{i}\n")
+
     def save(self, mode):
         """
         Used to save model weights and metrics
@@ -134,12 +173,12 @@ class ANN(nn.Module):
         "model_sate_dict": self.network.state_dict(),
         "optimiser_state_dict": self.optimiser.state_dict(),
         "loss": self.loss_epochs,
-        "accuracy": self.accuracy_epochs}, f'./{mode}Weights.tar')
+        "accuracy": self.accuracy_epochs}, f'./weights/{mode}Weights.tar')
         print("Model saved successfully")
 
     def load(self, mode):
         print("Loading model")
-        checkpoint = torch.load('./trainingWeights.tar')
+        checkpoint = torch.load(f'./weights/{mode}Weights.tar')
         self.network.load_state_dict(checkpoint["model_sate_dict"])
         self.optimiser.load_state_dict(checkpoint["optimiser_state_dict"])
         print("Weights loaded successfully")

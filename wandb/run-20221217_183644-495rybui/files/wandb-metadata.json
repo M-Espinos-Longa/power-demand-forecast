@@ -1,0 +1,105 @@
+{
+    "os": "Linux-5.14.0-1054-oem-x86_64-with-glibc2.35",
+    "python": "3.10.6",
+    "heartbeatAt": "2022-12-17T18:36:45.838589",
+    "startedAt": "2022-12-17T18:36:44.924066",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project/code/forecasting.py",
+    "codePath": "code/forecasting.py",
+    "git": {
+        "remote": "https://github.com/M-Espinos-Longa/power-demand-forecast.git",
+        "commit": "9b3c74e34d6568d2defc511b86228949f83c052b"
+    },
+    "email": "marc.espinos-longa@cranfield.ac.uk",
+    "root": "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/Power Demand Project",
+    "host": "mespinoslonga-ThinkPad-X1-Extreme-Gen-3",
+    "username": "mespinoslonga",
+    "executable": "/home/mespinoslonga/Documents/Project II - NSDTS Function Approximation/NSDTS-Func-Approx/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2820.0024166666667,
+        "min": 800.0,
+        "max": 5000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2600.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2600.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3499.987,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2600.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2600.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2600.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2600.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2600.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2600.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2600.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 2600.0,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 3500.002,
+            "min": 800.0,
+            "max": 5000.0
+        }
+    ],
+    "disk": {
+        "total": 45.53391647338867,
+        "used": 15.32504653930664
+    },
+    "gpu": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.298316955566406
+    }
+}
