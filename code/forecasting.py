@@ -34,12 +34,12 @@ net = ANN()
 net.init()
 
 # load data (AVOID IF NO GENERATED DATA)
-training_data_input = torch.load('trainInput.pt', map_location=torch.device("cpu"))
-training_data_output = torch.load('trainOutput.pt', map_location=torch.device("cpu"))
+training_data_input = torch.load('trainInput.pt', map_location=torch.device(net.device))
+training_data_output = torch.load('trainOutput.pt', map_location=torch.device(net.device))
 testing_data_input = torch.load('testInput.pt', map_location=torch.device(net.device))
 testing_data_output = torch.load('testOutput.pt', map_location=torch.device(net.device))
 
 # train and test model
-#net.train(training_data_input, training_data_output, wandb)
-net.load("training")
+net.train(training_data_input, training_data_output, wandb)
+#net.load("training")
 net.test(testing_data_input, testing_data_output)

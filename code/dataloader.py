@@ -58,7 +58,7 @@ class Dataloader(object):
                             self.trainIdata = torch.cat((self.trainIdata, traintensor.unsqueeze(0)), 0)
                             self.trainOdata = torch.cat((self.trainOdata, torch.tensor([vals[mb]]).unsqueeze(0)), 0)
 
-            # add to validation data
+            # add to test data
             else:
                 if i == round(len(self.raw_data) * 0.9 - self.look_back):
                     for mb in range(i,i+self.look_back+1):

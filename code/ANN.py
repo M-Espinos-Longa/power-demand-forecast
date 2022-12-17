@@ -25,7 +25,7 @@ class ANN(nn.Module):
         self.num_hidden_units = [8] # 8 neurons
         self.batch_size = 32 # data batches
         self.epochs = 30 # number of training iterations
-        self.lr = 1e-04
+        self.lr = 1e-04 # learning rate
         self.seed = 0
         self.rand_generator = np.random.RandomState(self.seed)
 
@@ -39,24 +39,20 @@ class ANN(nn.Module):
         # mean squared error loss function
         self.loss_func = nn.MSELoss()
 
-        # initialise Q networks, target Q networks, model loss, and optimisers for
-        # both teams
+        # initialise ANN networks
         self.network = nn.Sequential(
             nn.Linear(self.num_observations, self.num_hidden_units[0]),
-            #nn.Sigmoid(),
-            # nn.Linear(self.num_hidden_units[0], self.num_hidden_units[1]),
-            # nn.ReLU(),
             nn.Linear(self.num_hidden_units[0], self.num_output)
         ).to(self.device)
 
         # initialise model losses
         self.loss = None
 
-        # define optimisers
+        # define optimiser
         self.optimiser = torch.optim.Adam(self.network.parameters(), lr=self.lr)
 
         # decaying learning rate
-        #self.scheduler = torch.optim.lr_scheduler.StepLR(self.optimiser, step_size=1, gamma=0.1)
+        # self.scheduler = torch.optim.lr_scheduler.StepLR(self.optimiser, step_size=1, gamma=0.1)
 
         # define network modes
         self.network.train()
@@ -94,7 +90,7 @@ class ANN(nn.Module):
 
             self.loss_epochs.append(self.loss_val / (len(input)//self.batch_size)) # total epoch loss / number of data batches
             self.accuracy_epochs.append(self.acc_val / (len(input)//self.batch_size)) # mean absolute percentage error
-            #self.scheduler.step() # learning rate decay every epoch
+            # self.scheduler.step() # learning rate decay every epoch
 
             # metrics log
             wandb.log({"Loss": self.loss_epochs[-1],
@@ -125,7 +121,6 @@ class ANN(nn.Module):
         plt.plot(output.squeeze(1).to("cpu").detach().numpy(), label="Ground Truth")
         plt.legend()
         plt.show()
-
 
     def save(self, mode):
         """
