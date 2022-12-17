@@ -106,7 +106,7 @@ class ANN(nn.Module):
 
     def test(self, input, output):
         """
-        Validation
+        Testing
         Input:
             + input (tensor)
             + output (tensor)
