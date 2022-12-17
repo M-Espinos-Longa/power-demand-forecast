@@ -9,12 +9,12 @@ from dataloader import *
 
 # initialise training log data
 wandb.init(project="Forecasting", name=f"Training",
-    notes=f"hu=[64], \
-        lr=1e-03 (decay rate=0.1), \
+    notes=f"hu=[8], \
+        lr=1e-04, \
         batch_size=32, \
-        activation_func=Tanh, \
-        epochs=100, \
-        look_back=144, \
+        activation_func=None, \
+        epochs=30, \
+        look_back=24, \
         entity=m-espinos-longa")
 
 # define metrics
