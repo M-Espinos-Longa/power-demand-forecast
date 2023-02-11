@@ -1,9 +1,6 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 
-# power-demand-forecast
-UK active power demand forecast via Artificial Neural Networks.
-
 <!-- SOCIAL MEDIA LINKS -->
 <a href="https://www.linkedin.com/in/marc-espinos-longa/">
   <img src="images/pngegg.png" width="25" height="25">
