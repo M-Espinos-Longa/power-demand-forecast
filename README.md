@@ -29,10 +29,14 @@
 <!-- PROJECT LOGO -->
 <p align="center">
   <div align="center">
+    <a href="https://www.transformer-technology.com/news/us-news/1898-national-grid-uk-to-acquire-western-power-distribution-from-ppl.html">
+      <img src="images/elec.jpg" alt="Logo" width="512" height="240">
+    </a>
     <h1 align="center"><strong> UK Power Demand Forecast </strong></h1>
     <p>
       Authors: Marc Espinós Longa <br/>
       Date: 11 Feb 2023
+    </p>
   </div>
 </p>
 
@@ -63,19 +67,14 @@
 <!-- ABSTRACT -->
 ## Abstract
 <div id="abstract"></div>
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+<p align="justify"> In recent years, electricity generation has been transitioning towards zero-emission (green) energy sources. These processes often rely on external and non-controllable variables (e.g., weather conditions), making electricity production erratic and intermittent. To avoid energy shortage, the system must have an alternative supply that responds to the required demand when necessary. As energy storage is only feasible on a small to medium scale, electricity distributors need to look ahead and plan energy supply based on future power demand. </p>
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+<p align="justify"> Based on historical data extracted every 30 minutes between 2017 and 2022, we will train and test an artificial neural network (ANN) that can efficiently forecast (RMSE[^1] <= 12.416, Epochs[^2] = 30) power demand (MW[^3]) according to previous 12h of input data. </p>
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">~ <a href="#readme-top">back to top</a> ~</p>
-
+[^1]: Root mean square error is often used as an accuracy measure in time-series forecasting.
+[^2]: Number of training iterations over a dataset.
+[^3]: Megawatts.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- REQUIREMENTS -->
 ## Requirements
