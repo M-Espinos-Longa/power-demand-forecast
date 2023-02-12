@@ -69,11 +69,12 @@
 <div id="abstract"></div>
 <p align="justify"> In recent years, electricity generation has been transitioning towards zero-emission (green) energy sources. These processes often rely on external and non-controllable variables (e.g., weather conditions), making electricity production erratic and intermittent. To avoid energy shortage, the system must have an alternative supply that responds to the required demand when necessary. As energy storage is only feasible on a small to medium scale, electricity distributors need to look ahead and plan energy supply based on future power demand. </p>
 
-<p align="justify"> Based on historical data extracted every 30 minutes between 2017 and 2022, we will train and test an artificial neural network (ANN) that can efficiently forecast (RMSE[^1] <= 12.416, Epochs[^2] = 30) power demand (MW[^3]) according to previous 12h of input data. </p>
+<p align="justify"> Based on historical data extracted every 30 min. between 2017 and 2022, we will train and test an artificial neural network (ANN) that can efficiently forecast (RMSE<a href="#note1"><sup>1</sup></a> <= 12.416) future power demand (MW<a href="#note2"><sup>2</sup></a>) in an interval of 30 min. given 12h of previous input data. </p>
 
-[^1]: Root mean square error is often used as an accuracy measure in time-series forecasting.
-[^2]: Number of training iterations over a dataset.
-[^3]: Megawatts.
+<div id="note1"></div>
+<sup>1</sup> Root mean square error is often used as an accuracy measure in time-series forecasting <a href="#r1">[1]</a>. </br>
+<div id="note2"></div>
+<sup>2</sup> Megawatts.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- REQUIREMENTS -->
@@ -237,7 +238,8 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- REFERENCES -->
 ## References
-[1] <i>An awesome README template to jumpstart your projects!</i> (2023). https://github.com/othneildrew/Best-README-Template
+<div class="csl-entry", id="r1">[1] Georga, E. I., Fotiadis, D. I., &#38; Tigas, S. K. (2018). Nonlinear Models of Glucose Concentration. <i>Personalized Predictive Modeling in Type 1 Diabetes</i>, 131–151. https://doi.org/10.1016/B978-0-12-804831-3.00006-6</div>
+[n] <i>An awesome README template to jumpstart your projects!</i> (2023). https://github.com/othneildrew/Best-README-Template
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
