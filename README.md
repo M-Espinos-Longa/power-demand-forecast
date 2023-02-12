@@ -1,5 +1,5 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
+
 
 <!-- SOCIAL MEDIA LINKS -->
 <a href="https://www.linkedin.com/in/marc-espinos-longa/">
@@ -18,15 +18,7 @@
   <img src="images/ORCID_iD.svg.png" width="25" height="25">
 </a>
 
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-<!-- PROJECT LOGO -->
+<!-- COVER -->
 <p align="center">
   <div align="center">
     <a href="https://www.transformer-technology.com/news/us-news/1898-national-grid-uk-to-acquire-western-power-distribution-from-ppl.html">
@@ -46,7 +38,12 @@
   <summary><strong> Table of Contents </strong></summary>
   <ol>
     <li><a href="#abstract"> Abstract </a></li>
-    <li><a href="#requirements"> Requirements </a></li>
+    <li>
+      <a href="#requirements"> Requirements </a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
     <li><a href="#system-design"> System Design </a></li>
     <li>
       <ul>
@@ -63,46 +60,52 @@
 </details>
 
 
-
 <!-- ABSTRACT -->
+<a name="abstract"></a>
 ## Abstract
-<div id="abstract"></div>
 <p align="justify"> In recent years, electricity generation has been transitioning towards zero-emission (green) energy sources. These processes often rely on external and non-controllable variables (e.g., weather conditions), making electricity production erratic and intermittent. To avoid energy shortage, the system must have an alternative supply that responds to the required demand when necessary. As energy storage is only feasible on a small to medium scale, electricity distributors need to look ahead and plan energy supply based on future power demand. </p>
 
-<p align="justify"> Based on historical data extracted every 30 min. between 2017 and 2022, we will train and test an artificial neural network (ANN) that can efficiently forecast (RMSE<a href="#note1"><sup>1</sup></a> <= 12.416) future power demand (MW<a href="#note2"><sup>2</sup></a>) in an interval of 30 min. given 12h of previous input data. </p>
+<p align="justify"> Based on historical data extracted every 30 min. between 2017 and 2022, we will train and test an artificial neural network (ANN) that can efficiently forecast (RMSE<sup>1</sup> <= 12.416) future power demand (MW<sup>2</sup>) in an interval of 30 minutes given 12 hours of previous input data. </p>
 
-<div id="note1"></div>
-<sup>1</sup> Root mean square error is often used as an accuracy measure in time-series forecasting <a href="#r1">[1]</a>. </br>
-<div id="note2"></div>
-<sup>2</sup> Megawatts.
+<font size="-1"><sup>1</sup> Root mean square error is often used as an accuracy measure in time-series forecasting <a href="#r1">[1-4]</a>. </br>
+<sup>2</sup> Megawatts.</font>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- REQUIREMENTS -->
+<a name="requirements"></a>
 ## Requirements
-<div id="requirements"></div>
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+<p align="justify"> This project is built in Python 3.10.6 and Linux operating system. However, all the included libraries are compatible with macOS and Windows. You can easily check your current Python 3 version by running <code>python3 --version</code> command on your terminal.</p>
+<p align="justify"> List of libraries:</p>
+<ul>
+  <li>Pandas: read dataset file.</li>
+  <li>Pytorch: neural networks and related.</li>
+  <li>Wandb: real-time performance tracking.</li>
+  <li>Matplotlib: graph visualisation.</li>
+  <li>Tqdm: computing process visualisation on terminal.</li>
+  <li>Numpy: random seed generator for experiment reproducibility.</li>
+</ul>
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- INSTALLATION -->
+<a name="installation"></a>
 ### Installation
-<div id="installation"></div>
+<p align="justify">For Python versions greater than 3.5.x, <code>pip</code> package tool is installed by default. Earlier Python versions require <code>pip</code> to be installed separately. It is good practice to update your package information from all configured sources before making any installation. You can do that simply by running the following command:</p>
 
+<pre><code class="sh">sudo apt-get update</code></pre>
+
+<p align="justify">If you have already Python 3 installed in your system, execute the command below to install pip3:</p>
+
+<pre><code class="sh">sudo apt-get -y install python3-pip</code></pre>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SYSTEM DESIGN -->
 ## System Design
 <div id="system-design"></div>
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
+
 
 <!-- FUNCTION APPROXIMATION -->
 ### Function Approximation
@@ -218,29 +221,28 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CITATION -->
+## Citation
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Othneil Drew, README.md template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- REFERENCES -->
 ## References
-<div class="csl-entry", id="r1">[1] Georga, E. I., Fotiadis, D. I., &#38; Tigas, S. K. (2018). Nonlinear Models of Glucose Concentration. <i>Personalized Predictive Modeling in Type 1 Diabetes</i>, 131–151. https://doi.org/10.1016/B978-0-12-804831-3.00006-6</div>
-[n] <i>An awesome README template to jumpstart your projects!</i> (2023). https://github.com/othneildrew/Best-README-Template
+<div class="csl-entry", id="r1", align="justify">[1] Georga, E. I., Fotiadis, D. I., &#38; Tigas, S. K. (2018). Nonlinear Models of Glucose Concentration. <i>Personalized Predictive Modeling in Type 1 Diabetes</i>, 131–151. <a href="https://doi.org/10.1016/B978-0-12-804831-3.00006-6">https://doi.org/10.1016/B978-0-12-804831-3.00006-6</a></div>
 
+<div class="csl-entry", align="justify">[2] Christie, D., &#38; Neill, S. P. (2022). Measuring and Observing the Ocean Renewable Energy Resource. <i>Comprehensive Renewable Energy</i>, 149–175. <a href="https://doi.org/10.1016/B978-0-12-819727-1.00083-2">https://doi.org/10.1016/B978-0-12-819727-1.00083-2</a></div>
+
+<div class="csl-entry", align="justify">[3] Functional Networks. (2005). In <i>Mathematics in Science and Engineering</i> (Vol. 199, Issue C, pp. 169–232). Elsevier. <a href="https://doi.org/10.1016/S0076-5392(05)80012-8">https://doi.org/10.1016/S0076-5392(05)80012-8</a></div>
+
+<div class="csl-entry", align="justify">[4] Tiwari, K., &#38; Young Chong, N. (2020). Informative Path Planning (IPP): Informative area coverage. <i>Multi-Robot Exploration for Environmental Monitoring</i>, 85–99. <a href="https://doi.org/10.1016/B978-0-12-817607-8.00021-6">https://doi.org/10.1016/B978-0-12-817607-8.00021-6</a></div>
+</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
