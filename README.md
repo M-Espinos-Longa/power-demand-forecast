@@ -24,7 +24,7 @@
     <a href="https://www.transformer-technology.com/news/us-news/1898-national-grid-uk-to-acquire-western-power-distribution-from-ppl.html">
       <img src="images/elec.jpg" alt="Logo" width="512" height="240">
     </a>
-    <h1 align="center"><strong> UK Power Demand Forecast </strong></h1>
+    <h1 align="center"><strong> UK Power Demand Time-Series Forecast </strong></h1>
     <p>
       Authors: Marc Espinós Longa <br/>
       Date: 11 Feb 2023
@@ -90,13 +90,15 @@
 <!-- INSTALLATION -->
 <a name="installation"></a>
 ### Installation
-<p align="justify">For Python versions greater than 3.5.x, <code>pip</code> package tool is installed by default. Earlier Python versions require <code>pip</code> to be installed separately. It is good practice to update your package information from all configured sources before making any installation. You can do that simply by running the following command:</p>
+<p align="justify">For Python versions greater than 3.5.x, <code>pip</code> package tool is installed by default. Earlier Python versions require <code>pip</code> to be installed separately. It is considered good practice to update your package information from all configured sources before making any installation. You can do that simply by running the following command:</p>
 
 <pre><code class="sh">sudo apt-get update</code></pre>
 
 <p align="justify">If you have already Python 3 installed in your system, execute the command below to install pip3:</p>
 
 <pre><code class="sh">sudo apt-get -y install python3-pip</code></pre>
+
+<p align="justify"></p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
