@@ -92,11 +92,11 @@
 ### Installation
 <p align="justify">For Python versions greater than 3.5.x, <code>pip</code> package tool is installed by default. Earlier Python versions require <code>pip</code> to be installed separately. It is considered good practice to update your package information from all configured sources before making any installation. You can do that simply by running the following command:</p>
 
-<pre><code class="sh">sudo apt-get update</code></pre>
+<pre><code class="language-bash">sudo apt-get update</code></pre>
 
 <p align="justify">If you have already Python 3 installed in your system, execute the command below to install pip3:</p>
 
-<pre><code class="sh">sudo apt-get -y install python3-pip</code></pre>
+<pre><code class="language-bash">sudo apt-get -y install python3-pip</code></pre>
 
 <p align="justify"></p>
 
