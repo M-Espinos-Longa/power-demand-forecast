@@ -18,7 +18,7 @@ wandb.init(project="Forecasting", name=f"Training",
         activation_func=None, \
         epochs=30, \
         look_back=24, \
-        entity=m-espinos-longa")
+        entity=wandbID") # fill in with your wandb ID (you will need to sign up at https://wandb.ai/site)
 
 # define metrics
 wandb.define_metric("Epochs")
