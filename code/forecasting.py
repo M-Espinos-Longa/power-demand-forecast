@@ -36,7 +36,7 @@ wandb.define_metric("Accuracy", step_metric="Epochs")
 net = ANN()
 net.init()
 
-# load data (AVOID IF NO GENERATED DATA)
+# load data 
 training_data_input = torch.load('./data/trainInput.pt', map_location=torch.device(net.device))
 training_data_output = torch.load('./data/trainOutput.pt', map_location=torch.device(net.device))
 testing_data_input = torch.load('./data/testInput.pt', map_location=torch.device(net.device))
