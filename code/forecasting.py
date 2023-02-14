@@ -44,7 +44,7 @@ testing_data_output = torch.load('./data/testOutput.pt', map_location=torch.devi
 
 # train and test model
 #net.train(training_data_input, training_data_output, wandb)
-net.load("training") # (UNCOMMENT IF WEIGHTS AVAILABLE)
+net.load("training") # (UNCOMMENT IF WEIGHTS UNAVAILABLE)
 #net.test(testing_data_input, testing_data_output)
 
 # prediction
