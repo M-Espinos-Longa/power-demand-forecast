@@ -36,16 +36,16 @@ wandb.define_metric("Accuracy", step_metric="Epochs")
 net = ANN()
 net.init()
 
-# load data 
-training_data_input = torch.load('./data/trainInput.pt', map_location=torch.device(net.device))
-training_data_output = torch.load('./data/trainOutput.pt', map_location=torch.device(net.device))
-testing_data_input = torch.load('./data/testInput.pt', map_location=torch.device(net.device))
-testing_data_output = torch.load('./data/testOutput.pt', map_location=torch.device(net.device))
+# load data (UNCOMMENT IF WE WANT TO TRAIN OR TEST OUR MODEL)
+# training_data_input = torch.load('./data/trainInput.pt', map_location=torch.device(net.device))
+# training_data_output = torch.load('./data/trainOutput.pt', map_location=torch.device(net.device))
+# testing_data_input = torch.load('./data/testInput.pt', map_location=torch.device(net.device))
+# testing_data_output = torch.load('./data/testOutput.pt', map_location=torch.device(net.device))
 
 # train and test model
-#net.train(training_data_input, training_data_output, wandb)
-net.load("training") # (UNCOMMENT IF WEIGHTS UNAVAILABLE)
-#net.test(testing_data_input, testing_data_output)
+# net.train(training_data_input, training_data_output, wandb) (UNCOMMENT FOR TRAINING)
+net.load("training") # (COMMENT IF WEIGHTS UNAVAILABLE)
+# net.test(testing_data_input, testing_data_output) (UNCOMMENT FOR TESTING)
 
 # prediction
 net.prediction()
