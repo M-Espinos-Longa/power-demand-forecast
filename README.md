@@ -75,7 +75,7 @@
 <!-- REQUIREMENTS -->
 <a name="requirements"></a>
 ## Requirements
-This project is built in Python 3.10.6 and Linux operating system. However, all the included libraries are compatible with macOS and Windows. You can easily check your current Python 3 version by running `python3 --version`{:.sh} command on your terminal.
+This project is built in Python 3.10.6 and Linux operating system. However, all the included libraries are compatible with macOS and Windows. You can easily check your current Python 3 version by running `python3 --version` command on your terminal.
 <p align="justify"> List of libraries:</p>
 <ul>
   <li>Pandas: read dataset file.</li>
