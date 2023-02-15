@@ -69,6 +69,7 @@ Based on historical data extracted every 30 min. between 2017 and 2022, we will 
 
 <font size="-1"><sup>1</sup> Root mean square error is often used as an accuracy measure in time-series forecasting <a href="#r1">[1-4]</a>. </br>
 <sup>2</sup> Megawatts.</font>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -205,6 +206,7 @@ net.test(testing_data_input, testing_data_output)
 
 Note that it is not necessary to load the trained weights after training, as the model state dictionary (network parameters) are kept within our object. Nevertheless, <a href="code/ANN.py">ANN.py</a> automatically saves our trained weights in <a href="weights/trainingWeights.tar">trainingWeights.tar</a> after calling `net.train(training_data_input, training_data_output, wandb)`.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- RESULTS -->
 <a name="results"></a>
@@ -213,15 +215,21 @@ Note that it is not necessary to load the trained weights after training, as the
 
 * Training model performance:
 
-Loss, RMSE, Epochs
+<img src="images/modelLoss.png" width="380" height="200">
+&nbsp
+<img src="images/epochs.png" width="380" height="200">
+&nbsp
+<img src="images/rmse.png" width="380" height="200">
 
 * Model test:
 
-Forecast
+![Forecast](images/Forecast.png)
 
 * Predictions:
 
-Predictions
+![Predictions](images/Predictions.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CITATION -->
@@ -232,6 +240,9 @@ Predictions
 ```bibtext
 
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- ACKNOWLEDGMENTS -->
 <a name="acknowledgements"></a>
@@ -258,5 +269,7 @@ Predictions
 3. Functional Networks. (2005). In *Mathematics in Science and Engineering* (Vol. 199, Issue C, pp. 169–232). Elsevier. [https://doi.org/10.1016/S0076-5392(05)80012-8](https://doi.org/10.1016/S0076-5392(05)80012-8).
 
 4. Tiwari, K., & Young Chong, N. (2020). Informative Path Planning (IPP): Informative area coverage. *Multi-Robot Exploration for Environmental Monitoring*, 85–99. [https://doi.org/10.1016/B978-0-12-817607-8.00021-6](https://doi.org/10.1016/B978-0-12-817607-8.00021-6).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 </div>
