@@ -221,11 +221,11 @@ Note that it is not necessary to load the trained weights after training, as the
 &nbsp
 <img src="images/rmse.png" width="380" height="200">
 
-* Model test (Power demand [MW]):
+* Model test:
 
 ![Forecast](images/Forecast.png)
 
-* Predictions (Power demand [MW]):
+* Predictions:
 
 ![Predictions](images/Predictions.png)
 
