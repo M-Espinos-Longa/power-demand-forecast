@@ -30,7 +30,7 @@
     <a href="https://www.transformer-technology.com/news/us-news/1898-national-grid-uk-to-acquire-western-power-distribution-from-ppl.html">
       <img src="images/elec.jpg" alt="Logo" width="512" height="240">
     </a>
-    <h1 align="center"><strong> UK Power Demand Time-Series Forecast </strong></h1>
+    <h1 align="center"><strong> UK Active Power Demand Time-Series Forecast via Artificial Neural Networks</strong></h1>
     <p>
       Authors: Marc Espinós Longa <br/>
       Date: 11 Feb 2023
@@ -221,11 +221,11 @@ Note that it is not necessary to load the trained weights after training, as the
 &nbsp
 <img src="images/rmse.png" width="380" height="200">
 
-* Model test:
+* Model test (Power demand [MW]):
 
 ![Forecast](images/Forecast.png)
 
-* Predictions:
+* Predictions (Power demand [MW]):
 
 ![Predictions](images/Predictions.png)
 
@@ -237,8 +237,14 @@ Note that it is not necessary to load the trained weights after training, as the
 
 ## Citation
 
-```bibtext
-
+```
+@web_page{,
+   author = {Marc Espinos Longa},
+   month = {2},
+   title = {UK Active Power Demand Time-Series Forecast via Artificial Neural Networks},
+   url = {https://github.com/M-Espinos-Longa/power-demand-forecast},
+   year = {2023},
+}
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
