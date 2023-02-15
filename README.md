@@ -213,7 +213,7 @@ Note that it is not necessary to load the trained weights after training, as the
 
 ## Results
 
-* Training model performance:
+* Model performance:
 
 <img src="images/modelLoss.png" width="380" height="200">
 &nbsp
