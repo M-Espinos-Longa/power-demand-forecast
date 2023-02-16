@@ -33,7 +33,7 @@
     <h1 align="center"><strong> UK Active Power Demand Time-Series Forecast via Artificial Neural Networks</strong></h1>
     <p>
       Authors: Marc Espinós Longa <br/>
-      Date: 11 Feb 2023
+      Date: 16 Feb 2023
     </p>
   </div>
 </p>
@@ -221,13 +221,11 @@ Note that it is not necessary to load the trained weights after training, as the
 &nbsp
 <img src="images/rmse.png" width="380" height="200">
 
-* Model test:
+* Model test and predictions:
 
-![Forecast](images/Forecast.png)
-
-* Predictions:
-
-![Predictions](images/Predictions.png)
+<img src="images/Forecast.png" width="380" height="200">
+&nbsp
+<img src="images/Predictions.png" width="380" height="200">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
